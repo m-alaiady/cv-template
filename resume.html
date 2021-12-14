@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+	<title>Resume</title>
+</head>
+<body>
+
+    <div class="background-b">
+        <h3 > Resume </h3>
+    </div>
+    <div class="content">
+    
+        <div class="info-card">
+
+            <div class="avatar-section">
+                <img id="avatar" src="images/avatar.jpg" width="350"  />
+                <!-- Designed by pikisuperstar / Freepik in http://www.freepik.com -->
+            </div> 
+
+            <div class="main-section">
+                <h4>Your name</h4>
+                <h5>Your Major</h5>
+                <hr />
+                <label id="age">Age: </label>
+                <span>Your age</span>
+                <br />
+                <label id="address">Residence: </label>
+                <span>Your residence</span>
+                <br />
+		<label id="email"> E-mail:  </label>
+                <span>
+                  <a id="emailcontact" href="mailto:someone@example.com">someone@example.com</a>
+                </span>
+                
+
+                <br />
+                <label id="phone">Phone number: </label>
+                <span>012-345-6789</span>
+                <br />
+                <hr />
+                <div class="social-media">
+                     <button title="twitter" id="twitter" onclick="window.open('https://twitter.com/<account>')" target="_blank">
+                        <span class="fa fa-twitter"></span>
+                    </button>
+                     <button title="facebook" id="facebook" onclick="window.open('https://facebook.com/<account>')">
+                        <span class="fa fa-facebook"></span>
+                    </button>
+                     <button title="github" id="github" onclick="window.open('https://github.com/<account>')">
+                        <span class="fa fa-github"></span>
+                    </button>
+                     <button title="linkedin" id="linkedin" onclick="window.open('https://linkedin.com/<account>')">
+                        <span class="fa fa-linkedin"></span>
+                    </button>
+                </div>
+            </div>
+            
+
+        </div> 
+
+        <div class="progress-section">
+            <div class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+            <div class="progress-bars">
+                <label>HTML</label><br />
+                <progress value="92" max="100"> 92% </progress><span> 92% </span><br />
+                <label>CSS</label><br />
+                <progress value="85" max="100"> 85% </progress><span> 85% </span><br />
+                <label>JavaScript</label><br />
+                <progress value="65" max="100"> 65% </progress><span> 65% </span><br />
+                <label>PHP</label><br />
+                <progress value="88" max="100"> 88% </progress><span> 88% </span><br />
+                <label>SQL</label><br />
+                <progress value="92" max="100"> 92% </progress><span> 92% </span><br />                
+            </div>
+        </div>
+        
+        <div class="timeline">
+  <div class="container left">
+    <div class="timeline-content">
+      <h2>2017</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="timeline-content">
+      <h2>2016</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="timeline-content">
+      <h2>2015</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="timeline-content">
+      <h2>2012</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="timeline-content">
+      <h2>2011</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="timeline-content">
+      <h2>2007</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>
+
+        
+    </div> <!-- END OF .content -->
+    
+    <!-- TOP ARROW BUTTON -->
+        <div id="topBtn" class="to-up-arrow" title="go to up" onclick="topFunction();">
+                <span class="fa fa-angle-up"></span>
+        </div>
+    
+    <!-- TOP ARROW BUTTON END -->
+    
+    <script>
+        var top_btn = document.getElementById("topBtn");
+
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    top_btn.style.display = "block";
+                } else {
+                    top_btn.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+</body>
+</html>

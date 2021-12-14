@@ -1,0 +1,323 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Helvetica';
+}
+hr{
+  border:1px solid black;
+}
+label{
+  font-weight: bold;
+}
+ ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #000;
+}
+ li{
+  float: right
+}
+ li a{
+ display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.background-b {
+  background-color: #000;
+  height: 150px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  
+}
+.background-b h3{
+
+  color: #fff;
+  margin-left: 50px;
+  font-size: 45px;
+  font-family: 'THARWAT-EMARA-DEWANI';
+
+}
+.content .info-card{
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    width: 80%;
+    padding: 0;
+    margin: 100px 170px;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 2px 2px 25px black;
+}
+.info-card .main-section{
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.info-card .avatar-section{
+  border-right: 1px dashed black;
+}
+.info-card .avatar-section img{
+  display:block;
+}
+.info-card #emailcontact{
+  text-decoration: none;
+  color: black;
+}
+.social-media{
+  margin-top: 25px;
+}
+.social-media #github{
+    border: 1px solid #000;
+}
+.social-media button{
+    margin-left: 25px;
+    padding: 15px 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size:17px;
+    text-decoration: none;
+    text-align: center;
+}
+.social-media button:hover{
+  cursor: pointer;
+}
+.social-media button:focus{
+  outline: none;
+}
+.social-media .fa{
+    transition: transform 0.5s;
+}
+.social-media :hover .fa{
+    transform: rotate(360deg);
+}
+
+#twitter:hover{
+    background-color: #55acee;
+}
+#facebook:hover{
+    background-color: #3b5999;
+}
+#github:hover{
+    background-color: #fff;
+    color: #000;
+}
+#linkedin:hover{
+    background-color: #0077B5;
+}
+
+.progress-section {
+  display: flex;
+  width: 60%;
+  margin-top: 100px;
+  margin-left: 20vw;
+  border:1px solid black;
+}
+
+.progress-section .description{
+  width: 60%;
+  border-right: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 25px;
+  font-size: 18px;
+}
+
+.progress-section .progress-bars{
+  width: 40%;
+  margin-left: 25px;
+  padding: 10px;
+}
+
+.progress-bars progress {
+  border: none;
+}
+
+progress::-webkit-progress-value {
+  background: black;
+}
+
+
+progress::-moz-progress-bar {
+  background: black;
+}
+
+
+
+/* TIMELINE STLYING START */
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+ border: 1px solid black;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #000;
+  border: 4px solid #aaa;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #000;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #000 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* TIMELINE STYLING END -->
+
+/* TO UP ARROW */
+
+.to-up-arrow{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    font-size:25px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 25px 30px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.to-up-arrow:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* TO UP ARROW END */
+
+/* FOOTER START */
+
+.footer{
+position: fixed;
+  margin-top: 25px ;
+  background-color: #000;
+  color:#fff;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+    z-index: 1;
+
+}
+.footer .fa-heart{
+  color: red;
+  animation-name: heartpulse;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+}
+.footer #developed{
+  
+}
+.footer #published{
+    float: right;
+}
+
+@keyframes heartpulse{
+  0%{
+    transform:scale(1.0);
+  }
+
+  50%{
+    transform: scale(1.25);
+  }
+
+  100%{
+    transform: scale(1.0);
+  }
+}
+
+/* FOOTER END */
